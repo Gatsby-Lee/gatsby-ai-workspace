@@ -1,0 +1,18 @@
+## conda config: environment.yml
+# The `name` becomes the Conda environment name
+name: conda-gatsby-ai
+channels:
+  - conda-forge
+  # ref: https://stackoverflow.com/questions/70851048/does-it-make-sense-to-use-conda-poetry
+  # We want to have a reproducible setup, so we don't want default channels,
+  # which may be different for different users. All required channels should
+  # be listed explicitly here.
+  - nodefaults
+dependencies:
+  - kafkacat # https://anaconda.org/conda-forge/kafkacat
+  - tree # https://anaconda.org/conda-forge/tree
+  # === Python
+  - python=3.11.*
+  - pip # pip must be mentioned explicitly, or conda-lock will fail
+  - poetry # or 1.1.*, or no version at all -- as you want
+  - poetry-plugin-export # to export poetry.lock to requirements.txt
