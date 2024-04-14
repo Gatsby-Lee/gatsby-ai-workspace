@@ -9,8 +9,10 @@ channels:
   # be listed explicitly here.
   - nodefaults
 dependencies:
-  - kafkacat # https://anaconda.org/conda-forge/kafkacat
   - tree # https://anaconda.org/conda-forge/tree
+  - kafkacat # https://anaconda.org/conda-forge/kafkacat
+  - maven # https://anaconda.org/conda-forge/maven
+  - jq # https://anaconda.org/conda-forge/jq
   # === Python
   - python=3.11.*
   - pip # pip must be mentioned explicitly, or conda-lock will fail
