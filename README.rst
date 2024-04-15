@@ -15,3 +15,5 @@ Conda Env
     conda remove --name conda-gatsby-ai --all
 
     conda env update --prune
+
+    conda search jdk -h | grep repo

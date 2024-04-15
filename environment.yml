@@ -13,6 +13,7 @@ dependencies:
   - kafkacat # https://anaconda.org/conda-forge/kafkacat
   - maven # https://anaconda.org/conda-forge/maven
   - jq # https://anaconda.org/conda-forge/jq
+  - openjdk=8.0.382
   # === Python
   - python=3.11.*
   - pip # pip must be mentioned explicitly, or conda-lock will fail
